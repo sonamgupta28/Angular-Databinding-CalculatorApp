@@ -1,0 +1,28 @@
+<h1  align="center">Simple Data Binding Calculator</h1>
+  <div id="container">
+  
+        <input type="text" id="firstValue" [(ngModel)]='firstValue'/>
+     
+        <input type="text" readonly id="operator" value={{operator}}/>
+     
+        <input type="text" id="secondValue" [(ngModel)]='secondValue'/>
+        
+      
+        <input type="text" id="equals" value="="/>
+     
+        <input type="text" id="result" readonly value={{result}}/>
+
+        <br/>
+      
+        <input type="button" (click)='onAdd()' value="+" id="Add"/>       
+     
+        <input type="button" (click)='onSubstract()' value="-" id="Substract"/>
+     
+        <input type="button" (click)='onDivide()'value="/" id="Divide"/>
+     
+        <input type="button"(click)='onMultiply()' value="*" id="Multiply"/>
+        <br/>
+    
+        <input type="button" (click)='onClear()' value="clear" id="Clear" />
+     
+  </div>
